@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://homehorizon.app/Roam" version="0.1.0" viewmodes="maximized">
+   <name>Roam</name>
+   <icon src="icon.png"></icon>
+   <content src="index.html"></content>
+   <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"></feature>
+   <tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"></tizen:setting>
+   <!-- 6.5 = 2022 TVs, the oldest web engine (Chromium 85) the build targets. Package id is unique to this app. -->
+   <tizen:application id="G95LvKtsxm.Roam" package="G95LvKtsxm" required_version="6.5"></tizen:application>
+   <tizen:metadata key="http://tizen.org/metadata/app_ui_type/base_screen_resolution" value="extensive"></tizen:metadata>
+   <tizen:profile name="tv-samsung"></tizen:profile>
+   <!-- No privileges and no <access> origins: Candidate 0 makes no network requests. -->
+</widget>

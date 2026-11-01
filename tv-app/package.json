@@ -1,0 +1,32 @@
+{
+  "name": "homehorizon-tv",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "build:tizen": "tsc --noEmit && vite build --mode tizen",
+    "preview": "vite preview",
+    "tizen:package": "npm run build:tizen && node scripts/tizen.mjs package",
+    "tizen:install": "node scripts/tizen.mjs install",
+    "tizen:run": "node scripts/tizen.mjs run",
+    "tizen:deploy": "npm run tizen:package && node scripts/tizen.mjs install && node scripts/tizen.mjs run"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
+    "@fontsource/manrope": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.5"
+  }
+}

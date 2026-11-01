@@ -1,0 +1,30 @@
+# Dependencies and build output, anywhere in the tree.
+node_modules/
+dist/
+build/
+.cache/
+.vite/
+*.tsbuildinfo
+
+# Secrets and local overrides.
+.env*
+
+# Logs and scratch files.
+logs/
+*.log
+*-debug.log*
+.tmp-*
+vite.config.*.timestamp-*
+
+# macOS and editor noise.
+.DS_Store
+*.swp
+
+# Platform-managed agentplat state, not project source.
+/.plugins/
+/.opencode-skills/
+
+# Internal working notes, kept local and out of the public repo.
+# AGENTS.md is intentionally tracked.
+CLAUDE.md
+/ROADMAP.md

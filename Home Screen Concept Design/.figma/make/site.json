@@ -1,0 +1,10 @@
+{
+  "description": "Delivers an inspiring, user-friendly home screen with travel visuals, local events, weather, and app access, optimized for monitors and smart TVs.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
